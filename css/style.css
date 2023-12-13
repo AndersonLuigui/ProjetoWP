@@ -9,7 +9,7 @@
 .menu-nav {
     display: flex;
     padding: 1em;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .menu-nav ul {
