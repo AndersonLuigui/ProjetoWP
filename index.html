@@ -15,7 +15,7 @@
         <ul>
             <li><a href="#">Início</a></li>
             <li><a href="#">Peças</a></li>
-            <li><a href="#">Desmonte</a></li>
+            <li><a href="./html/desmonte.html">Desmonte</a></li>
             <li><a href="#">Contato</a></li>
         </ul>
     </div>
@@ -25,7 +25,17 @@
     <div class="search-box">
         <ul>
             <li>
-                <input id="search" onkeyup="search()" class="search-txt" type="text" name="" placeholder="Pesquisar texto">
+                <input id="search" onkeyup="search()" class="search-txt" type="text" name="" placeholder="Pesquisar peças">
+            </li>
+            <li>
+                <select id="categoriaSelect" onchange="filterByCategory()">
+                    <option value="">Todas as Categorias</option>
+                    <option value="suspensao">Suspensão</option>
+                    <option value="motor">Motor</option>
+                    <option value="parachoque">Parachoque</option>
+                    <option value="parachoque">Rodas</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
             </li>
         </ul>
     </div>
@@ -38,7 +48,11 @@
             </div>
 
             <div class="text-peca">
-                <p>Lorem ipsum dolor sit amet consectetur sit amet consectetu </p>
+                <p>Lorem ipsum dolor sit ame sit amet consectetu </p>
+            </div>
+
+            <div class="categoria-peca motor">
+                <p>Categoria: Motor</p>
             </div>
 
             <div class="preco-peca">
@@ -60,66 +74,8 @@
             <div class="text-peca">
                 <p>Lorem ipsum dolor sit amet consectetur sit amet consectetu </p>
             </div>
-
-            <div class="preco-peca">
-                <p><strong>R$ 25,99</strong> </p>
-            </div>
-            
-            <div class="btn-buy">
-                <button>Comprar</button>
-            </div>
-        </div>
-
-
-        <div class="item-peca">
-            <div class="img-peca">
-                <img src="./img/peca1.webp" alt="peca1">
-            </div>
-
-            <div class="text-peca">
-                <p>Lorem ipsum dolor sit amet consectetur sit amet consectetu </p>
-            </div>
-
-            <div class="preco-peca">
-                <p><strong>R$ 25,99</strong> </p>
-            </div>
-            
-            <div class="btn-buy">
-                <button>Comprar</button>
-            </div>
-        </div>
-
-
-        
-        <div class="item-peca">
-            <div class="img-peca">
-                <img src="./img/peca1.webp" alt="peca1">
-            </div>
-
-            <div class="text-peca">
-                <p>Lorem ipsum dolor sit amet consectetur sit amet consectetu </p>
-            </div>
-
-            <div class="preco-peca">
-                <p><strong>R$ 25,99</strong> </p>
-            </div>
-            
-            <div class="btn-buy">
-                <button>Comprar</button>
-            </div>
-        </div>
-
-        <div class="desmonte">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia beatae, quos enim laboriosam </p>
-        </div>
-
-        <div class="item-peca">
-            <div class="img-peca">
-                <img src="./img/peca1.webp" alt="peca1">
-            </div>
-
-            <div class="text-peca">
-                <p>Lorem ipsum dolor sit amet consectetur sit amet consectetu </p>
+            <div class="categoria-peca suspensao">
+                <p>Categoria: Suspensão</p>
             </div>
 
             <div class="preco-peca">
@@ -140,24 +96,8 @@
             <div class="text-peca">
                 <p>Lorem ipsum dolor sit amet consectetur sit amet consectetu </p>
             </div>
-
-            <div class="preco-peca">
-                <p><strong>R$ 25,99</strong> </p>
-            </div>
-            
-            <div class="btn-buy">
-                <button>Comprar</button>
-            </div>
-        </div>
-
-
-        <div class="item-peca">
-            <div class="img-peca">
-                <img src="./img/peca1.webp" alt="peca1">
-            </div>
-
-            <div class="text-peca">
-                <p>Lorem ipsum dolor sit amet consectetur sit amet consectetu </p>
+            <div class="categoria-peca rodas">
+                <p>Categoria: Rodas</p>
             </div>
 
             <div class="preco-peca">
@@ -178,6 +118,36 @@
             <div class="text-peca">
                 <p>Lorem ipsum dolor sit amet consectetur sit amet consectetu </p>
             </div>
+            <div class="categoria-peca parachoque">
+                <p>Categoria: Parachoque</p>
+            </div>
+
+            <div class="preco-peca">
+                <p><strong>R$ 25,99</strong> </p>
+            </div>
+            
+            <div class="btn-buy">
+                <button>Comprar</button>
+            </div>
+        </div>
+
+
+        <div class="break-container"></div>
+
+
+
+        <div class="item-peca">
+            <div class="img-peca">
+                <img src="./img/peca1.webp" alt="peca1">
+            </div>
+
+            <div class="text-peca">
+                <p>Lorem ipsum dolor sit ame sit amet consectetu </p>
+            </div>
+
+            <div class="categoria-peca motor">
+                <p>Categoria: Motor</p>
+            </div>
 
             <div class="preco-peca">
                 <p><strong>R$ 25,99</strong> </p>
@@ -190,14 +160,164 @@
 
 
 
+        <div class="item-peca">
+            <div class="img-peca">
+                <img src="./img/peca1.webp" alt="peca1">
+            </div>
+
+            <div class="text-peca">
+                <p>Lorem ipsum dolor sit amet consectetur sit amet consectetu </p>
+            </div>
+            <div class="categoria-peca suspensao">
+                <p>Categoria: Suspensão</p>
+            </div>
+
+            <div class="preco-peca">
+                <p><strong>R$ 25,99</strong> </p>
+            </div>
+            
+            <div class="btn-buy">
+                <button>Comprar</button>
+            </div>
+        </div>
+
+
+        <div class="item-peca">
+            <div class="img-peca">
+                <img src="./img/peca1.webp" alt="peca1">
+            </div>
+
+            <div class="text-peca">
+                <p>Lorem ipsum dolor sit amet consectetur sit amet consectetu </p>
+            </div>
+            <div class="categoria-peca rodas">
+                <p>Categoria: Rodas</p>
+            </div>
+
+            <div class="preco-peca">
+                <p><strong>R$ 25,99</strong> </p>
+            </div>
+            
+            <div class="btn-buy">
+                <button>Comprar</button>
+            </div>
+        </div>
+
+
+        <div class="item-peca">
+            <div class="img-peca">
+                <img src="./img/peca1.webp" alt="peca1">
+            </div>
+
+            <div class="text-peca">
+                <p>Lorem ipsum dolor sit amet consectetur sit amet consectetu </p>
+            </div>
+            <div class="categoria-peca parachoque">
+                <p>Categoria: Parachoque</p>
+            </div>
+
+            <div class="preco-peca">
+                <p><strong>R$ 25,99</strong> </p>
+            </div>
+            
+            <div class="btn-buy">
+                <button>Comprar</button>
+            </div>
+        </div>
+
+
+        <div class="break-container"></div>
 
 
 
+        <div class="item-peca">
+            <div class="img-peca">
+                <img src="./img/peca1.webp" alt="peca1">
+            </div>
+
+            <div class="text-peca">
+                <p>Lorem ipsum dolor sit ame sit amet consectetu </p>
+            </div>
+
+            <div class="categoria-peca motor">
+                <p>Categoria: Motor</p>
+            </div>
+
+            <div class="preco-peca">
+                <p><strong>R$ 25,99</strong> </p>
+            </div>
+            
+            <div class="btn-buy">
+                <button>Comprar</button>
+            </div>
+        </div>
 
 
 
+        <div class="item-peca">
+            <div class="img-peca">
+                <img src="./img/peca1.webp" alt="peca1">
+            </div>
+
+            <div class="text-peca">
+                <p>Lorem ipsum dolor sit amet consectetur sit amet consectetu </p>
+            </div>
+            <div class="categoria-peca suspensao">
+                <p>Categoria: Suspensão</p>
+            </div>
+
+            <div class="preco-peca">
+                <p><strong>R$ 25,99</strong> </p>
+            </div>
+            
+            <div class="btn-buy">
+                <button>Comprar</button>
+            </div>
+        </div>
 
 
+        <div class="item-peca">
+            <div class="img-peca">
+                <img src="./img/peca1.webp" alt="peca1">
+            </div>
+
+            <div class="text-peca">
+                <p>Lorem ipsum dolor sit amet consectetur sit amet consectetu </p>
+            </div>
+            <div class="categoria-peca rodas">
+                <p>Categoria: Rodas</p>
+            </div>
+
+            <div class="preco-peca">
+                <p><strong>R$ 25,99</strong> </p>
+            </div>
+            
+            <div class="btn-buy">
+                <button>Comprar</button>
+            </div>
+        </div>
+
+
+        <div class="item-peca">
+            <div class="img-peca">
+                <img src="./img/peca1.webp" alt="peca1">
+            </div>
+
+            <div class="text-peca">
+                <p>Lorem ipsum dolor sit amet consectetur sit amet consectetu </p>
+            </div>
+            <div class="categoria-peca parachoque">
+                <p>Categoria: Parachoque</p>
+            </div>
+
+            <div class="preco-peca">
+                <p><strong>R$ 25,99</strong> </p>
+            </div>
+            
+            <div class="btn-buy">
+                <button>Comprar</button>
+            </div>
+        </div>
 
 
 

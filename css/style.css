@@ -33,25 +33,40 @@
 
 /* BARRA DE PESQUISA */
 
+
+.search-box ul {
+    display: flex;
+    list-style-type: none; /* Remova as bolinhas de lista */
+    padding: 0; /* Remova o preenchimento padrão da lista */
+
+}
+
 .search-box li {
-    list-style: none;
+    margin-right: 10px; /* Ajuste a margem conforme necessário para separar os elementos */
 }
 
 
 .search-box {
+    background-color: #4CAF50;
+    text-align: center;
     margin-top: 10px;
-    padding-left: 380px;
-    padding-right: 380px;
     transition: 1s;
-
 }
 
 .search-txt {
     padding: 8px;
-    width: 100%;
+    width: 500px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+#categoriaSelect {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 157px;
 }
 
 /* Estilize a barra de pesquisa quando estiver em foco */
@@ -65,6 +80,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 0px 0px 20px 0px;
 
 }
 
@@ -105,6 +121,8 @@
     width: 270px;
     height: 50px;
     padding-bottom: 10px;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .preco-peca {    
@@ -148,10 +166,9 @@
 
 
 
-.desmonte {
-    background-color: #ccc;
-    height: 280px;
+.break-container {
     width: 100%;
+    margin: 15px 0px 15px 0px;
 }
 
 
