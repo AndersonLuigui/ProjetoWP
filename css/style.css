@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: 1s;
 }
 
 /* MENU NAV */
 .menu-nav {
+    transition: 1.5s;
     display: flex;
     padding: 1em;
     justify-content: center;
@@ -59,6 +59,108 @@
 .search-txt:focus {
     border-color: #4CAF50;
 }
+
+/* Conteúdo da página à estilizar */
+ 
+.container {
+    padding: 20px;
+
+}
+
+
+/* Conteúdo das peças */
+.item-peca{
+    display: block;
+    border: black solid 1px;
+    border-radius: 6px;
+    width: 270px;
+    padding: 10px;
+    transition: 1.5s;
+
+}
+
+.item-peca:hover {
+    box-shadow: #424242 3px 2px;
+}
+
+.img-peca {
+    text-align: center;
+    height: 250px;
+    width: 270px;
+    padding-bottom: 10px;
+}
+
+.img-peca img {
+    width: 250px;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.img-peca img:hover {
+    transform: scale(1.05);
+}
+
+.text-peca {
+    width: 270px;
+    height: 50px;
+    padding-bottom: 10px;
+}
+
+.preco-peca {    
+    width: 270px;
+    height: 17px;
+    text-align: center;
+    position: relative;
+}
+
+.preco-peca p {
+    font-size: 25px;
+}
+
+.btn-buy{
+    width: 270px;
+    padding-bottom: 10px;
+
+
+}
+
+.btn-buy button{
+    transition: 1.5s;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 270px;
+    height: 35px;
+    margin-top: 20px;
+}
+
+.btn-buy button:hover {
+    background-color: #f7f7f7;
+    color: black;
+    border: black 1px solid;
+    box-shadow: #424242 2px 2px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* MEDIA QUERY PARA DISPOSITIVOS MÓVEIS */
 @media only screen and (max-width: 600px) {
