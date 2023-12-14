@@ -18,7 +18,6 @@
 }
 
 .menu-nav ul li {
-
     padding-inline: 10px;
 }
 
@@ -63,7 +62,9 @@
 /* Conteúdo da página à estilizar */
  
 .container {
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
 }
 
@@ -147,7 +148,11 @@
 
 
 
-
+.desmonte {
+    background-color: #ccc;
+    height: 280px;
+    width: 100%;
+}
 
 
 
@@ -164,6 +169,16 @@
 
 /* MEDIA QUERY PARA DISPOSITIVOS MÓVEIS */
 @media only screen and (max-width: 600px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-peca {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
 
     .logo img{
         width: 400px;
