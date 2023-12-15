@@ -84,6 +84,15 @@
 }
 
 
+
+/* SLIDEEEE */
+
+#peca-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+
 /* Conteúdo das peças */
 .item-peca{
     display: block;
@@ -99,12 +108,35 @@
     box-shadow: #424242 3px 2px;
 }
 
+
 .img-peca {
     text-align: center;
     height: 250px;
     width: 270px;
     padding-bottom: 10px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+
 }
+
+
+
+
+.btn-slide {
+    margin-top: 10px;
+}
+
+.btn-slide button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* ---------------------------------- */
+
 
 .img-peca img {
     width: 250px;
