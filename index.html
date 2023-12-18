@@ -17,25 +17,28 @@
             <li><a href="#">Peças</a></li>
             <li><a href="./html/desmonte.html">Desmonte</a></li>
             <li><a href="#">Contato</a></li>
-        </ul>
-    </div>
-
-    <div class="search-box">
-        <ul>
-            <li>
+            <div class="search-box">
                 <input id="search" onkeyup="search()" class="search-txt" type="text" name="" placeholder="Pesquisar peças">
-            </li>
-            <li>
+            </div>
+            <div class="filtro">
                 <select id="categoriaSelect" onchange="filterByCategory()">
                     <option value="">Todas as Categorias</option>
                     <option value="suspensao">Suspensão</option>
                     <option value="motor">Motor</option>
                     <option value="parachoque">Parachoque</option>
                     <option value="rodas">Rodas</option>
+                    <option value="outros">Outros</option>
                     <!-- Adicione mais opções conforme necessário -->
                 </select>
-            </li>
+            </div>
         </ul>
+
+    </div>
+
+ 
+
+    <div class="titulo">
+        <span>Disponíveis para desmonte</span>
     </div>
 
     <div class="container">
@@ -55,12 +58,12 @@
                 <h2> Ford Edge 2013 4x4 V6</h2>
             </div>
 
-            <div class="categoria-peca motor">
-                <h4>Todas as categorias</h4>
+            <div class="categoria-peca">
+                <h5>Todas as categorias</h5>
             </div>
 
             <div class="preco-peca">
-                <p><strong></strong> </p>
+                <span>Disponível para retirada de peças</span>
             </div>
             
             <div class="btn-buy">
@@ -84,12 +87,12 @@
                 <h3> PASSAT B6</h3>
             </div>
 
-            <div class="categoria-peca motor">
-                <h4>Todas as categorias</h4>
+            <div class="categoria-peca">
+                <h5>Todas as categorias</h5>
             </div>
 
             <div class="preco-peca">
-                <p><strong></strong> </p>
+                <span>Disponível para retirada de peças</span>
             </div>
             
             <div class="btn-buy">
@@ -113,12 +116,12 @@
                 <h3> PASSAT B7 </h3>
             </div>
 
-            <div class="categoria-peca motor">
-                <h4>Todas as categorias</h4>
+            <div class="categoria-peca">
+                <h5>Todas as categorias</h5>
             </div>
 
             <div class="preco-peca">
-                <p><strong></strong> </p>
+                <span>Disponível para retirada de peças</span>
             </div>
             
             <div class="btn-buy">
@@ -141,16 +144,16 @@
                 <h3> RESGATE 24h </h3>
             </div>
 
-            <div class="categoria-peca motor">
-                <h5>Todas as categorias</h5>
+            <div class="categoria-peca outros">
+                <h5>Outros</h5>
             </div>
 
             <div class="preco-peca">
-                <p><strong></strong> </p>
+                <span>24h</span>
             </div>
             
             <div class="btn-buy">
-                <button>Entrar em contato</button>
+                <button onclick="enviarMenssagem()">Entrar em contato</button>
             </div>
         </div>
 
@@ -160,33 +163,9 @@
         <div class="break-container"></div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="footer-box">
+            
+        </div>
 
 
 

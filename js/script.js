@@ -69,3 +69,9 @@ showSlide('slide6', currentSlide['slide6']);
 showSlide('slide7', currentSlide['slide7']);
 showSlide('slide8', currentSlide['slide8']);
 // Adicione mais conforme necessário
+
+
+
+function enviarMenssagem() {
+    
+}

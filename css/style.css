@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 body {
@@ -10,26 +10,49 @@ body {
 }
 
 
-
 /* MENU NAV */
 .menu-nav {
-    transition: 1.5s;
     display: flex;
     padding: 1em;
     justify-content: center;
+    
 }
+
+.menu-nav li {
+    transition: 1.5s;
+    box-shadow: 2px 4px 12px rgba(0,0,0,.03);
+    transition: all 1s cubic-bezier(0,0,.3,0);
+    width: 165px;
+    border-radius: 3px;
+    margin-inline: 2px;
+    text-align: center;
+    border: #cccccc5d 1px solid;
+    padding: 5px;
+
+}
+
+.menu-nav li:hover {
+    background-color: #bf4800;
+    transition: 1.5s ease;
+    cursor: pointer;
+    color: white;
+} 
 
 .menu-nav ul {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 .menu-nav ul li {
     padding-inline: 10px;
+    align-items: center;
 }
 
 .menu-nav ul li a {
     text-decoration: none;
+    color: rgb(46, 31, 31);
+
 }
 
 
@@ -40,44 +63,63 @@ body {
 
 /* BARRA DE PESQUISA */
 
-
-.search-box ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none; /* Remova as bolinhas de lista */
-    padding: 0; /* Remova o preenchimento padrão da lista */
-
+#search {
+    background-color: #f7f7f7;
+    width: 165px;
+    border: #cccccc5d 1px solid;
+    padding: 6.5px;
+    border-radius: 3px;
+    
 }
 
-.search-box li {
-    margin-right: 10px; /* Ajuste a margem conforme necessário para separar os elementos */
-}
-
-
-.search-box {
-    margin-top: 10px;
-    transition: 1s;
-}
 
 .search-txt {
-    padding: 8px;
-    width: 500px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 5px;
+    margin-inline: 2px;
+
+    padding: 5px;
+    width: 120px;
+    border: 1px solid ;
+    border-radius: 3px;
+    background-color: white;
 }
 
 #categoriaSelect {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    width: 157px;
+    margin-inline: 2px;
+    width: 165px;
+    border: #cccccc5d 1px solid;
+    background-color: white;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+.preco-peca span {
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color: #bf4800;
+    display: block;
+}
+
+
+span {
+    color: #2b3538;
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: .007em;
 }
 
 /* Estilize a barra de pesquisa quando estiver em foco */
 .search-txt:focus {
     border-color: #4CAF50;
+}
+
+
+.titulo {
+    text-align: center;
+    padding: 8px;
+
 }
 
 /* Conteúdo da página à estilizar */
@@ -103,16 +145,19 @@ body {
 /* Conteúdo das peças */
 .item-peca{
     display: block;
-    border: black solid 1px;
+    border: rgba(0, 0, 0, 0.103) solid 1px;
     border-radius: 6px;
     width: 270px;
     padding: 10px;
     transition: 1.5s;
+    box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+    transition: all 1s cubic-bezier(0,0,.5,1);
 
 }
 
 .item-peca:hover {
-    box-shadow: #424242 3px 2px;
+    box-shadow: 4px 6px 15px #1f1e1e17;
+
 }
 
 
@@ -153,7 +198,7 @@ body {
 .btn-slide button:hover {
     border-radius: 5px;
     transition: 0.7s ease;
-    background-color: #7e7b7ba4;
+    background-color: #bf4800;
     color: white;
 }
 /* ---------------------------------- */
@@ -178,7 +223,7 @@ body {
     word-wrap: break-word;
 }
 
-.preco-peca {    
+/* .preco-peca {    
     width: 270px;
     height: 17px;
     text-align: center;
@@ -187,6 +232,10 @@ body {
 
 .preco-peca p {
     font-size: 25px;
+} */
+
+.categoria-peca {
+    color: #2b3538;
 }
 
 .btn-buy{
@@ -225,15 +274,11 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
+.footer-box {
+    background-color: #bf4800;
+    width: 100%;
+    height: 50px;
+}
 
 
 
@@ -251,51 +296,35 @@ body {
     }
 
     .logo img{
-        width: 400px;
+        width: 350px;
     }
 
     .menu-nav {
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     .menu-nav ul {
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
 
     .menu-nav ul li {
+        width: 350px;
         text-align: center;
         padding: 10px 0;
+        margin: 1px;
     }
 
-    .search-txt {
-        width: 400px;
-    }
-
-
-    .search-box ul {
-        display: block;
-        justify-content: center;
+    #search, .search-txt, #categoriaSelect  {
+        width: 350px; 
         text-align: center;
-        list-style-type: none; 
-        padding: 0; 
-    
+        padding: 10px 0;
+        margin: 1px;      
     }
 
 
-    .search-box {
-        transition: 1s;
-        margin-top: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 
-    .search-box ul {
-        width: 100%;
-    }
 
-    .search-box ul li {
-        width: 100%;
-    }
+
+
 }
