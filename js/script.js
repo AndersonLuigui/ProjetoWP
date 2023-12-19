@@ -71,7 +71,15 @@ showSlide('slide8', currentSlide['slide8']);
 // Adicione mais conforme necessário
 
 
+//
+function enviarMenssagem(itemText) {
+  // Número de telefone e mensagem predefinida
+  const numeroTelefone = '+5561992011822';  // Substitua pelo número de telefone desejado
+  const mensagem = encodeURIComponent(`Olá tudo bem! Eu tenho interesse no item: ${itemText}`);
 
-function enviarMenssagem() {
-    
+  // Montar o link do WhatsApp com o número e mensagem
+  const linkWhatsApp = `https://wa.me/${numeroTelefone}?text=${mensagem}`;
+
+  // Redirecionar para o link do WhatsApp
+  window.location.href = linkWhatsApp;
 }
