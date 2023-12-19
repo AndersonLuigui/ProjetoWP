@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>WP Auto Peças</title>
 </head>
@@ -13,10 +14,10 @@
 
     <div class="menu-nav">
         <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Peças</a></li>
-            <li><a href="./html/desmonte.html">Desmonte</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="/index.html">Início</a></li>
+            <li><a href="/index.html">Peças</a></li>
+            <li><a href="https://www.instagram.com/wpdesmonte/">Desmonte</a></li>
+            <li><a href="https://wa.me/5561992011822">Contato</a></li>
             <div class="search-box">
                 <input id="search" onkeyup="search()" class="search-txt" type="text" name="" placeholder="Pesquisar peças">
             </div>
@@ -27,6 +28,7 @@
                     <option value="motor">Motor</option>
                     <option value="parachoque">Parachoque</option>
                     <option value="rodas">Rodas</option>
+                    <option value="freios">Freios</option>
                     <option value="outros">Outros</option>
                     <!-- Adicione mais opções conforme necessário -->
                 </select>
@@ -129,6 +131,36 @@
             </div>
         </div>
 
+        <div class="item-peca" id="slide5">
+            <div class="img-peca">
+                <img src="./img/modulo.webp" alt="peca5" class="slide-img">
+                <img src="./img/modulo1.webp" alt="peca5" class="slide-img">
+                <img src="./img/modulo2.webp" alt="peca5" class="slide-img">
+                <img src="./img/modulo3.webp" alt="peca5" class="slide-img">
+
+            </div>
+            <div class="btn-slide">
+                <button onclick="prevSlide('slide5')"><</button>
+                <button onclick="nextSlide('slide5')">></button>
+            </div>
+
+            <div class="text-peca">
+                <h3> Módulo Abs Ford Edge 2013 </h3>
+            </div>
+
+            <div class="categoria-peca freios">
+                <h5>Freios</h5>
+            </div>
+
+            <div class="preco-peca">
+                <h2>R$3.999</h2>
+            </div>
+            
+            <div class="btn-buy">
+                <button onclick="enviarMenssagem()">Entrar em contato</button>
+            </div>
+        </div>
+
 
         <div class="item-peca" id="slide4">
             <div class="img-peca">
@@ -158,12 +190,45 @@
         </div>
 
 
+        <div class="break-container"></div>
 
+
+        
+        <div class="item-peca" id="slide6">
+            <div class="img-peca">
+                <img src="./img/mercadolivre.svg" alt="peca6" class="slide-img">
+
+            </div>
+            <div class="btn-slide">
+<!--                 <button onclick="prevSlide('slide5')"><</button>
+                <button onclick="nextSlide('slide5')">></button> -->
+            </div>
+
+            <div class="text-peca">
+                <h3> Mercado Livre </h3>
+            </div>
+
+            <div class="categoria-peca outros">
+                <h5>Outros</h5>
+            </div>
+
+            <div class="preco-peca">
+                <span>Entregamos em todo o Brasil</span>
+            </div>
+            
+            <div class="btn-buy">
+                <a href="https://lista.mercadolivre.com.br/_CustId_134249545?item_id=MLB4281015646&category_id=MLB270430&seller_id=134249545&client=recoview-selleritems&recos_listing=true"><button>Acessar link</button></a>
+            </div>
+        </div>
 
         <div class="break-container"></div>
 
 
         <div class="footer-box">
+            <ul>
+                <li><a href="https://wa.me/5561992011822"><i class="bi bi-whatsapp"></i></i></a></li>
+                <li><a href="https://www.instagram.com/wpdesmonte/"><i class="bi bi-instagram"></i></a></li>
+            </ul>
             
         </div>
 

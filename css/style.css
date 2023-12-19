@@ -275,9 +275,32 @@ span {
 
 
 .footer-box {
-    background-color: #bf4800;
-    width: 100%;
-    height: 50px;
+    bottom: 0;
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-box ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-box ul li {
+    padding-inline: 10px;
+    list-style: none;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+
+}
+
+.bi.bi-whatsapp,
+.bi.bi-instagram {
+    color: black;
+    font-size: 30px;
+    text-shadow: none;
 }
 
 
