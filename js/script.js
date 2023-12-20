@@ -13,9 +13,27 @@ function filterByCategory() {
     });
 }
 
-/* let currentSlide = 0;
-const slides = document.querySelectorAll('.slide-img');
-const totalSlides = slides.length; */
+
+
+function search() {
+    var input, filter, container, items, text, i;
+
+    input = document.getElementById("search");
+    filter = input.value.toUpperCase();
+    container = document.getElementsByClassName("container")[0];
+    items = container.getElementsByClassName("item-peca");
+
+    for (i = 0; i < items.length; i++) {
+        text = items[i].getElementsByClassName("text-peca")[0].getElementsByTagName("h2")[0].innerText;
+        if (text.toUpperCase().indexOf(filter) > -1) {
+            items[i].style.display = "";
+        } else {
+            items[i].style.display = "none";
+        }
+    }
+}
+
+
 
 function showSlide(slideId, index) {
     const slides = document.querySelectorAll(`#${slideId} .slide-img`);
@@ -38,6 +56,9 @@ function showSlide(slideId, index) {
     }
 }
 
+
+
+
 function prevSlide(slideId) {
     showSlide(slideId, currentSlide[slideId] - 1);
 }
@@ -45,6 +66,8 @@ function prevSlide(slideId) {
 function nextSlide(slideId) {
     showSlide(slideId, currentSlide[slideId] + 1);
 }
+
+
 
 // Inicialize o array currentSlide para cada item de peça
 const currentSlide = {
@@ -59,6 +82,8 @@ const currentSlide = {
     // Adicione mais conforme necessário
 };
 
+
+
 // Exibe o primeiro slide de cada item ao carregar a página
 showSlide('slide1', currentSlide['slide1']);
 showSlide('slide2', currentSlide['slide2']);
@@ -71,7 +96,10 @@ showSlide('slide8', currentSlide['slide8']);
 // Adicione mais conforme necessário
 
 
-//
+
+
+
+
 function enviarMenssagem(itemText) {
   // Número de telefone e mensagem predefinida
   const numeroTelefone = '+5561992011822';  // Substitua pelo número de telefone desejado
@@ -83,3 +111,6 @@ function enviarMenssagem(itemText) {
   // Redirecionar para o link do WhatsApp
   window.location.href = linkWhatsApp;
 }
+
+
+

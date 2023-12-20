@@ -33,10 +33,16 @@ body {
 
 .menu-nav li:hover {
     background-color: #bf4800;
-    transition: 1.5s ease;
+    transition: .5s ease;
     cursor: pointer;
     color: white;
 } 
+
+.menu-nav li:hover a {
+    color: white;
+    transition: .5s ease;
+
+}
 
 .menu-nav ul {
     display: flex;
@@ -51,7 +57,13 @@ body {
 
 .menu-nav ul li a {
     text-decoration: none;
-    color: rgb(46, 31, 31);
+    font-weight:bolder;
+    color:#2d3f2e;
+
+}
+
+
+.bi bi-search{
 
 }
 
@@ -182,24 +194,26 @@ span {
 }
 
 
-.btn-slide button {
+.btn-slide {
     border-radius: 5px;
     text-align: center;
     border: none;
     color: #6e6a6af3;
-    background-color: rgb(247, 247, 247);
-    padding: 8px;
     cursor: pointer;
-    width: 35px;
+    width: 270px;
     font-size: larger;
     
 }
 
-.btn-slide button:hover {
+.bi-caret-left-square, .bi-caret-right-square {
+    font-size: 25px;
+    color: #424242;
+}
+
+.bi-caret-left-square:hover, .bi-caret-right-square:hover {
     border-radius: 5px;
-    transition: 0.7s ease;
-    background-color: #bf4800;
-    color: white;
+    transition: .5s ease;
+    color:#bf4800;
 }
 /* ---------------------------------- */
 
