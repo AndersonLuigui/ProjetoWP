@@ -311,7 +311,8 @@ span {
 }
 
 .bi.bi-whatsapp,
-.bi.bi-instagram {
+.bi.bi-instagram,
+.bi-geo-alt-fill {
     color: black;
     font-size: 30px;
     text-shadow: none;
