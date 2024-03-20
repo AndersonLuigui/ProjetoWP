@@ -153,6 +153,10 @@ span {
     overflow: hidden;
 }
 
+.invisible {
+    visibility: hidden;
+  }
+
 
 /* Conteúdo das peças */
 .item-peca{

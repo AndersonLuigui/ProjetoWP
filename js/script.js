@@ -79,6 +79,12 @@ const currentSlide = {
     'slide6' :0,
     'slide7' :0,
     'slide8' :0,
+    'slide9' :0,
+    'slide10' :0,
+    'slide11' :0,
+    'slide12' :0,
+    'slide13' :0,
+    'slide14' :0,
     // Adicione mais conforme necessário
 };
 
@@ -93,6 +99,12 @@ showSlide('slide5', currentSlide['slide5']);
 showSlide('slide6', currentSlide['slide6']);
 showSlide('slide7', currentSlide['slide7']);
 showSlide('slide8', currentSlide['slide8']);
+showSlide('slide9', currentSlide['slide9']);
+showSlide('slide10', currentSlide['slide10']);
+showSlide('slide11', currentSlide['slide11']);
+showSlide('slide12', currentSlide['slide12']);
+showSlide('slide13', currentSlide['slide13']);
+showSlide('slide14', currentSlide['slide14']);
 // Adicione mais conforme necessário
 
 
@@ -103,7 +115,7 @@ showSlide('slide8', currentSlide['slide8']);
 function enviarMenssagem(itemText) {
   // Número de telefone e mensagem predefinida
   const numeroTelefone = '+5561992011822';  // Substitua pelo número de telefone desejado
-  const mensagem = encodeURIComponent(`Olá tudo bem! Eu tenho interesse no item: ${itemText}`);
+  const mensagem = encodeURIComponent(`Olá tudo bem! Vim pelo site e tenho interesse no item: ${itemText}`);
 
   // Montar o link do WhatsApp com o número e mensagem
   const linkWhatsApp = `https://wa.me/${numeroTelefone}?text=${mensagem}`;
